@@ -1,0 +1,127 @@
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+*.swp
+*.swo
+*.tmp
+*.log
+*.bak
+
+# VS Code
+.vscode/
+.history/
+
+# JetBrains
+.idea/
+*.iml
+
+# ---- Node / JavaScript / TypeScript ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json*
+yarn.lock*
+pnpm-lock.yaml*
+
+# Build outputs
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# ---- Go ----
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go modules/pkg cache (usually outside repo, but just in case)
+vendor/
+
+# ---- Python (for tools/scripts) ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.eggs/
+.env/
+.venv/
+venv/
+ENV/
+env.bak/
+
+# ---- Terraform ----
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+.terraform/
+.terraform.lock.hcl
+
+# Local override files
+terraform.tfvars
+*.tfvars.json
+
+# ---- Kubernetes / Helm / Kustomize ----
+# (no manifests ignored by default; you want them in git)
+# But ignore local generated stuff:
+chart-repo/
+helm-cache/
+tmp-helm-*/
+
+# ---- Logs / temp ----
+logs/
+*.log
+*.log.*
+tmp/
+temp/
+
+# ---- Docker ----
+*.pid
+*.pid.lock
+
+# Docker build artifacts
+docker-build/
+.dockerignore.local
+
+# ---- Coverage / test artifacts ----
+coverage/
+.coverage
+coverage.xml
+junit.xml
+test-results/
+test-output/
+
+# ---- IDE-specific / misc ----
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# ---- Generated docs / diagrams ----
+docs/_build/
+docs/.cache/
+*.plantuml.png
+*.puml.png
+
+# ---- Local configuration overrides ----
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Custom: local notes
+notes/
+*.note.md
